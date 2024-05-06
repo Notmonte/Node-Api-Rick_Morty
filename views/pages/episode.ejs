@@ -1,0 +1,24 @@
+<%- include('../partials/header'); %>
+
+<main class="main" id="episodeMain">
+    <div class="container">
+        <div class="row episode-row">
+            <% data.forEach(item => { %>
+                <div class="col-5 p-3">
+                    <a href="/episodes/<%= item.id %>" class="text-decoration-none text-success">
+                        <h2 class="episode-h2 text-center">
+                            <%= item.name %>
+                        </h2>
+                    </a>
+                    <div class="episode-div text-center">
+                        <p class="episode-text"><span class="ep-text text-capitalize">air date: </span> <%= item.air_date %></p>
+                        <p class="episode-text"><span class="ep-text text-capitalize">season: </span>  <%= item.season %></p>
+                        <p class="episode-text"><span class="ep-text text-capitalize">episode: </span> <%= item.episode %></p>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</main>
+
+<%- include('../partials/footer'); %>

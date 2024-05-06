@@ -1,0 +1,28 @@
+<%- include('../partials/header'); %>
+
+<main class="main" id="epSingleMain">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="ep-div text-center mt-5">
+                    <h2 class="mb-4">
+                        <%= data.name %>
+                    </h2>
+                    <p class="episode-text mt-2"><span class="ep-text text-capitalize">air date: </span> <%= data.air_date %></p>
+                    <p class="episode-text"><span class="ep-text text-capitalize">season: </span>  <%= data.season %></p>
+                    <p class="episode-text"><span class="ep-text text-capitalize">episode: </span> <%= data.episode %></p>
+                </div>
+            </div>
+            <div class="col-8">
+                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image d-block mx-auto w-50 h-50"/>
+                <ul class="mt-5">
+                    <li class="ep-lorem mt-5 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus exercitationem error   voluptatum explicabo, veniam dolore. Facere magnam quia dolore ex rerum laudantium dolor sunt cumque?
+                    </li>
+                    <li class="ep-lorem mt-5 mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, odit. Quo deserunt odio debitis accusantium. Quibusdam, quaerat.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%- include('../partials/footer'); %>

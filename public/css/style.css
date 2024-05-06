@@ -1,0 +1,26 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.card-ul {
+    flex-direction: column;
+    /* border: 1px gray solid; */
+    
+}
+
+.episode-div {
+    /* border: 2px solid dodgerblue; */
+    border-radius: 5px;
+}
+
+.episode-row {
+    border-top: 2px solid darkcyan;
+}
+
+.ep-lorem {
+    width: 50%;
+    flex-direction: column;
+}
